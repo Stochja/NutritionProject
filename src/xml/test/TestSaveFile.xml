@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Products>
+    <Product barcode="">
+        <ProductName>Chocolat</ProductName>
+        <BrandName>Ethiquable</BrandName>
+        <Calories>619</Calories>
+        <TotalFat>51.0</TotalFat>
+        <SaturatedFat>31.0</SaturatedFat>
+        <TotalCarbs>24.0</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>11.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>14.0</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>11.0</Protein>
+        <Sodium>0.0</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
+    <Product barcode="">
+        <ProductName>Carottes Râpées Au Citron De Sicile</ProductName>
+        <BrandName>Bonduelle</BrandName>
+        <Calories>77</Calories>
+        <TotalFat>5.0</TotalFat>
+        <SaturatedFat>0.0</SaturatedFat>
+        <TotalCarbs>6.0</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>3.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>4.0</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>1.0</Protein>
+        <Sodium>273.0</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>330.0</VitaminA>
+        <VitaminC>8.0</VitaminC>
+        <Calcium>2.0</Calcium>
+        <Iron>1.0</Iron>
+    </Product>
+</Products>

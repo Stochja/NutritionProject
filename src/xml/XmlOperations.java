@@ -16,28 +16,16 @@ import java.io.File;
 import java.io.IOException;
 
 public class XmlOperations {
-    final String _PATH_TO_FILE_ = "C:/Users/Nico/IdeaProjects/NutritionProject/";
-    final String saveFile = "productList";
+    private final static String _PATH_TO_FILE_ = "C:/Users/Nico/IdeaProjects/NutritionProject/";
+    private final static String saveFile = "productList";
 
-    public boolean checkForSavedFile(String filename, String path) {
-        String fileToTest, pathToTest;
+    public static Boolean checkForSavedFile(String filename, String path) {
+        File tmpDir = getRightFile(filename, path);
 
-        if (filename == null || path == null || filename.isEmpty() || path.isEmpty()) {
-            fileToTest = saveFile;
-            pathToTest = _PATH_TO_FILE_;
-        } else {
-            fileToTest = filename;
-            pathToTest = path;
-        }
-
-        File tmpDir = new File(pathToTest + fileToTest);
-        if (tmpDir.exists() && tmpDir.isFile() && tmpDir.length() > 0) {
-            return true;
-        }
-        return false;
+        return tmpDir.exists() && tmpDir.isFile() && tmpDir.length() > 0;
     }
 
-    public void createSaveFile(Produit[] prdList, String filename, String path) throws Exception {
+    private static File getRightFile(String filename, String path) {
         String fileToTest, pathToTest;
 
         if (filename == null || path == null || filename.isEmpty() || path.isEmpty()) {
@@ -48,7 +36,12 @@ public class XmlOperations {
             pathToTest = path;
         }
 
-        File tmpDir = new File(pathToTest + fileToTest);
+        return new File(pathToTest + fileToTest);
+    }
+
+    public static void createSaveFile(Produit[] prdList, String filename, String path) throws Exception {
+        File tmpDir = getRightFile(filename, path);
+
         try {
             if (!tmpDir.createNewFile()) {
                 throw new Exception("Save file already exists");
