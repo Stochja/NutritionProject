@@ -17,34 +17,34 @@ public class Produit {
     private long calories;
 
     // In grams
-    private double totalFat;
-    private double saturatedFat;
-    private double totalCarbs;
-    private double polyunsaturated;
-    private double dietaryFiber;
-    private double monounsaturated;
-    private double sugars;
-    private double trans;
-    private double protein;
+    private Double totalFat;
+    private Double saturatedFat;
+    private Double totalCarbs;
+    private Double polyunsaturated;
+    private Double dietaryFiber;
+    private Double monounsaturated;
+    private Double sugars;
+    private Double trans;
+    private Double protein;
 
 
     // In milligrams
-    private double sodium;
-    private double potassium;
-    private double cholesterol;
+    private Double sodium;
+    private Double potassium;
+    private Double cholesterol;
 
     // In percent
-    private double vitaminA;
-    private double vitaminC;
-    private double calcium;
-    private double iron;
+    private Double vitaminA;
+    private Double vitaminC;
+    private Double calcium;
+    private Double iron;
 
     // Constructor with all parameters
-    public Produit(String productName, String brandName, String barcode, long calories, double totalFat,
-                   double saturatedFat, double totalCarbs, double polyunsaturated,
-                   double dietaryFiber, double monounsaturated, double sugars, double trans, double protein,
-                   double sodium, double potassium, double cholesterol, double vitaminA, double vitaminC,
-                   double calcium, double iron) {
+    public Produit(String productName, String brandName, String barcode, Long calories, Double totalFat,
+                   Double saturatedFat, Double totalCarbs, Double polyunsaturated,
+                   Double dietaryFiber, Double monounsaturated, Double sugars, Double trans, Double protein,
+                   Double sodium, Double potassium, Double cholesterol, Double vitaminA, Double vitaminC,
+                   Double calcium, Double iron) {
         this.productName = productName;
         this.brandName = brandName;
         this.barcode = barcode;
@@ -137,71 +137,71 @@ public class Produit {
         return brandName;
     }
 
-    public long getCalories() {
+    public Long getCalories() {
         return calories;
     }
 
-    public double getTotalFat() {
+    public Double getTotalFat() {
         return totalFat;
     }
 
-    public double getSaturatedFat() {
+    public Double getSaturatedFat() {
         return saturatedFat;
     }
 
-    public double getTotalCarbs() {
+    public Double getTotalCarbs() {
         return totalCarbs;
     }
 
-    public double getPolyunsaturated() {
+    public Double getPolyunsaturated() {
         return polyunsaturated;
     }
 
-    public double getDietaryFiber() {
+    public Double getDietaryFiber() {
         return dietaryFiber;
     }
 
-    public double getMonounsaturated() {
+    public Double getMonounsaturated() {
         return monounsaturated;
     }
 
-    public double getSugars() {
+    public Double getSugars() {
         return sugars;
     }
 
-    public double getTrans() {
+    public Double getTrans() {
         return trans;
     }
 
-    public double getProtein() {
+    public Double getProtein() {
         return protein;
     }
 
-    public double getSodium() {
+    public Double getSodium() {
         return sodium;
     }
 
-    public double getPotassium() {
+    public Double getPotassium() {
         return potassium;
     }
 
-    public double getCholesterol() {
+    public Double getCholesterol() {
         return cholesterol;
     }
 
-    public double getVitaminA() {
+    public Double getVitaminA() {
         return vitaminA;
     }
 
-    public double getVitaminC() {
+    public Double getVitaminC() {
         return vitaminC;
     }
 
-    public double getCalcium() {
+    public Double getCalcium() {
         return calcium;
     }
 
-    public double getIron() {
+    public Double getIron() {
         return iron;
     }
 }
