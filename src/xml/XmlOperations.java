@@ -4,6 +4,7 @@ import Nutrition.Produit;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,10 +15,12 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class XmlOperations {
-    private final static String _PATH_TO_FILE_ = "C:/Users/Nico/IdeaProjects/NutritionProject/";
-    private final static String saveFile = "productList";
+    public final static String _PATH_TO_FILE_ = "C:/Users/Nico/IdeaProjects/NutritionProject/";
+    private final static String saveFile = "productList.xml";
 
     public static Boolean checkForSavedFile(String filename, String path) {
         File tmpDir = getRightFile(filename, path);
@@ -39,7 +42,7 @@ public class XmlOperations {
         return new File(pathToTest + fileToTest);
     }
 
-    public static void createSaveFile(Produit[] prdList, String filename, String path) throws Exception {
+    public static void createSaveFile(List<Produit> prdList, String filename, String path) throws Exception {
         File tmpDir = getRightFile(filename, path);
 
         try {
@@ -69,6 +72,49 @@ public class XmlOperations {
             System.out.println("There was an error while creating the save file:" + e.getMessage());
             throw new Exception("Save file could not be created, modifications won't be saved");
         }
+    }
+
+    public static List<Produit> loadFromSaveFile(String filename, String path) {
+        List<Produit> prdList = new ArrayList<>();
+        File tmpDir = getRightFile(filename, path);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        try {
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(tmpDir);
+            doc.getDocumentElement().normalize();
+            NodeList nList = doc.getElementsByTagName("Product");
+            for (int i = 0; i < nList.getLength(); i++) {
+                Node node = nList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) node;
+                    System.out.println(element.getTextContent());
+                    Produit prd = new Produit(element.getElementsByTagName("ProductName").item(0).getTextContent(),
+                            element.getElementsByTagName("BrandName").item(0).getTextContent(),
+                            element.getAttribute("barcode"),
+                            Long.parseLong(element.getElementsByTagName("Calories").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("TotalFat").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("SaturatedFat").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("TotalCarbs").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("PolyUnsaturated").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("DietaryFiber").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("MonoUnsaturated").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Sugars").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("TransFat").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Protein").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Sodium").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Potassium").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Cholesterol").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("VitaminA").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("VitaminC").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Calcium").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Iron").item(0).getTextContent()));
+                    prdList.add(prd);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return prdList;
     }
 
     private static Node getProduct(Document doc, Produit prd) {
@@ -101,5 +147,14 @@ public class XmlOperations {
         Element node = doc.createElement(name);
         node.appendChild(doc.createTextNode(value));
         return node;
+    }
+
+    public static void deleteSaveFile(String filename, String path) {
+        File tmpDir = getRightFile(filename, path);
+        if (tmpDir.delete()) {
+            System.out.println("Save file deleted :" + filename);
+        } else {
+            System.out.println("Could not delete file: " + filename);
+        }
     }
 }

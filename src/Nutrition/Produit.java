@@ -98,7 +98,7 @@ public class Produit {
         if (this == o) return true;
         if (!(o instanceof Produit)) return false;
         Produit produit = (Produit) o;
-        return getCalories() == produit.getCalories() &&
+        return getCalories().equals(produit.getCalories()) &&
                 Double.compare(produit.getTotalFat(), getTotalFat()) == 0 &&
                 Double.compare(produit.getSaturatedFat(), getSaturatedFat()) == 0 &&
                 Double.compare(produit.getTotalCarbs(), getTotalCarbs()) == 0 &&
