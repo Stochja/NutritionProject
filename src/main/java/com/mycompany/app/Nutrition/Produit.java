@@ -1,4 +1,4 @@
-package Nutrition;
+package main.java.com.mycompany.app.Nutrition;
 
 import java.util.Objects;
 

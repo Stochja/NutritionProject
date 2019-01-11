@@ -1,6 +1,6 @@
-package xml;
+package main.java.com.mycompany.app;
 
-import Nutrition.Produit;
+import main.java.com.mycompany.app.Nutrition.Produit;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

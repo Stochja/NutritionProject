@@ -1,6 +1,6 @@
-package NutritionTest;
+package test.java.com.mycompany.app.NutritionTest;
 
-import Nutrition.Produit;
+import main.java.com.mycompany.app.Nutrition.Produit;
 import org.junit.Test;
 
 public class NutrientsTest {

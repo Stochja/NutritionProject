@@ -1,8 +1,8 @@
-package TechnicalTest;
+package test.java.com.mycompany.app.TechnicalTest;
     
-import Nutrition.Produit;
+import main.java.com.mycompany.app.Nutrition.Produit;
 import org.junit.Test;
-import xml.XmlOperations;
+import main.java.com.mycompany.app.XmlOperations;
 
 import java.util.ArrayList;
 import java.util.List;
