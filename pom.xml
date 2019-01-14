@@ -35,7 +35,7 @@
 		  <artifactId>exec-maven-plugin</artifactId>
 		  <version>1.4.0</version>
 		  <configuration>
-			<mainClass>main.java.com.mycompany.app.NutritionProject</mainClass>
+			<mainClass>com.mycompany.app.NutritionProject</mainClass>
 		  </configuration>
 		</plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
