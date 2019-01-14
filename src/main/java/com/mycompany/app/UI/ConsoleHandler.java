@@ -2,6 +2,7 @@ package com.mycompany.app.UI;
 
 import com.mycompany.app.Nutrition.Produit;
 import com.mycompany.app.NutritionProject;
+import com.mycompany.app.Optimisation.InequalitiesGenerator;
 
 import java.util.Scanner;
 
@@ -10,6 +11,7 @@ public class ConsoleHandler {
         System.out.println("*** Menu ***");
         System.out.println("1. Add a product");
         System.out.println("2. Product list");
+        System.out.println("3. Generate menu");
 
         System.out.println("0. End program");
         System.out.println("Enter a number :");
@@ -24,6 +26,9 @@ public class ConsoleHandler {
             case 2:
                 while (handleProductDisplay(sca)) ;
                 break;
+            case 3:
+                handleMenuGeneration(sca);
+                break;
         }
         return true;
     }
@@ -31,7 +36,6 @@ public class ConsoleHandler {
     private static void handleProductAddition(Scanner sca) {
         System.out.println("*** Addition of a product ***");
         System.out.println("Nutritional values for which weight (in g) :");
-        sca.nextLine();
         double factor = 1 / (Double.parseDouble(sca.nextLine()) / 100.0);
         System.out.println("Product name :");
         String productName = sca.nextLine();
@@ -139,6 +143,29 @@ public class ConsoleHandler {
         }
 
         System.out.println("*** End of product list ***");
+    }
+
+    private static void handleMenuGeneration(Scanner sca) {
+        clearConsole();
+        System.out.println("*** Menu generation ***");
+        System.out.println("First step is inputting your macros for the day");
+        System.out.println("Calories: ");
+        int calories = Integer.parseInt(sca.nextLine());
+        System.out.println("Protein : ");
+        int protein = Integer.parseInt(sca.nextLine());
+        System.out.println("Carbs : ");
+        int carbs = Integer.parseInt(sca.nextLine());
+        System.out.println("Fiber : ");
+        int fiber = Integer.parseInt(sca.nextLine());
+        System.out.println("Sugars : ");
+        int sugars = Integer.parseInt(sca.nextLine());
+        System.out.println("Fat : ");
+        int fat = Integer.parseInt(sca.nextLine());
+        System.out.println("Saturated Fat : ");
+        int saturatedFat = Integer.parseInt(sca.nextLine());
+        System.out.println("Sodium : ");
+        int sodium = Integer.parseInt(sca.nextLine());
+        InequalitiesGenerator.generateInequalities(calories, protein, carbs, fiber, sugars, fat, saturatedFat, sodium);
     }
 
     private static void clearConsole() {

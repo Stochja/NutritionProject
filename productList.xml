@@ -42,20 +42,167 @@
         <Calcium>2.0</Calcium>
         <Iron>1.0</Iron>
     </Product>
-    <Product barcode="3017760851466">
-        <ProductName>Sabl‚ des Flandres</ProductName>
-        <BrandName>LU</BrandName>
-        <Calories>464.0</Calories>
-        <TotalFat>14.4</TotalFat>
-        <SaturatedFat>9.6</SaturatedFat>
-        <TotalCarbs>75.2</TotalCarbs>
-        <PolyUnsaturated>0.0</PolyUnsaturated>
-        <DietaryFiber>3.2</DietaryFiber>
+    <Product barcode="None">
+        <ProductName>Banana</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>89.0</Calories>
+        <TotalFat>0.3</TotalFat>
+        <SaturatedFat>0.1</SaturatedFat>
+        <TotalCarbs>23.0</TotalCarbs>
+        <PolyUnsaturated>0.1</PolyUnsaturated>
+        <DietaryFiber>2.6</DietaryFiber>
         <MonoUnsaturated>0.0</MonoUnsaturated>
-        <Sugars>25.6</Sugars>
+        <Sugars>12.0</Sugars>
         <TransFat>0.0</TransFat>
-        <Protein>6.4</Protein>
-        <Sodium>0.32</Sodium>
+        <Protein>1.1</Protein>
+        <Sodium>1.0</Sodium>
+        <Potassium>358.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>1.0</VitaminA>
+        <VitaminC>14.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>1.0</Iron>
+    </Product>
+    <Product barcode="tbd">
+        <ProductName>Jambon Le Bon Paris … L'�touff‚e Sans Nitrite</ProductName>
+        <BrandName>Herta</BrandName>
+        <Calories>105.71428571428572</Calories>
+        <TotalFat>2.5142857142857142</TotalFat>
+        <SaturatedFat>1.0</SaturatedFat>
+        <TotalCarbs>0.5142857142857142</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>0.5714285714285715</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>0.5142857142857142</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>20.0</Protein>
+        <Sodium>1914.2857142857142</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
+    <Product barcode="tbd">
+        <ProductName>Yaourt au lait entier Saveur Coco</ProductName>
+        <BrandName>Malo</BrandName>
+        <Calories>97.0</Calories>
+        <TotalFat>3.1</TotalFat>
+        <SaturatedFat>2.0</SaturatedFat>
+        <TotalCarbs>14.0</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>0.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>14.0</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>3.3</Protein>
+        <Sodium>0.12</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
+    <Product barcode="No barcode">
+        <ProductName>Chicken breast</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>165.0</Calories>
+        <TotalFat>3.6</TotalFat>
+        <SaturatedFat>1.0</SaturatedFat>
+        <TotalCarbs>0.0</TotalCarbs>
+        <PolyUnsaturated>0.8</PolyUnsaturated>
+        <DietaryFiber>0.0</DietaryFiber>
+        <MonoUnsaturated>1.2</MonoUnsaturated>
+        <Sugars>0.0</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>31.0</Protein>
+        <Sodium>74.0</Sodium>
+        <Potassium>256.0</Potassium>
+        <Cholesterol>85.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>1.0</Calcium>
+        <Iron>5.0</Iron>
+    </Product>
+    <Product barcode="TBD">
+        <ProductName>Wonderful almonds roasted salted</ProductName>
+        <BrandName>Waitrose</BrandName>
+        <Calories>616.0</Calories>
+        <TotalFat>52.1</TotalFat>
+        <SaturatedFat>4.0</SaturatedFat>
+        <TotalCarbs>10.3</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>0.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>4.9</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>21.1</Protein>
+        <Sodium>0.8</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
+    <Product barcode="TBD">
+        <ProductName>Yaourt nature Pause Gourmande c‚r‚ales noix de p‚can</ProductName>
+        <BrandName>Baiko</BrandName>
+        <Calories>130.0</Calories>
+        <TotalFat>5.0</TotalFat>
+        <SaturatedFat>2.0</SaturatedFat>
+        <TotalCarbs>17.0</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>0.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>12.0</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>4.0</Protein>
+        <Sodium>0.2</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
+    <Product barcode="tbd">
+        <ProductName>Cereal bio pan de centeno</ProductName>
+        <BrandName>Cereal bio</BrandName>
+        <Calories>214.0</Calories>
+        <TotalFat>3.7</TotalFat>
+        <SaturatedFat>0.5</SaturatedFat>
+        <TotalCarbs>34.0</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>0.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>2.7</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>5.7</Protein>
+        <Sodium>1.1</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
+    <Product barcode="TBD">
+        <ProductName>Carottes rƒp‚es bio </ProductName>
+        <BrandName>CARREFOUR BIO</BrandName>
+        <Calories>66.0</Calories>
+        <TotalFat>3.2</TotalFat>
+        <SaturatedFat>0.5</SaturatedFat>
+        <TotalCarbs>6.3</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>4.7</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>6.3</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>0.6</Protein>
+        <Sodium>0.61</Sodium>
         <Potassium>0.0</Potassium>
         <Cholesterol>0.0</Cholesterol>
         <VitaminA>0.0</VitaminA>
