@@ -1,8 +1,8 @@
-package test.java.com.mycompany.app.TechnicalTest;
-    
-import main.java.com.mycompany.app.Nutrition.Produit;
+package com.mycompany.app.TechnicalTest;
+
+import com.mycompany.app.Nutrition.Produit;
+import com.mycompany.app.XmlOperations;
 import org.junit.Test;
-import main.java.com.mycompany.app.XmlOperations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +14,11 @@ public class XmlOperationsTest {
     private static List<Produit> productList = new ArrayList<>();
 
     static {
-        productList.add(new Produit("Chocolat", "Ethiquable", "", 619L,
+        productList.add(new Produit("Chocolat", "Ethiquable", "", 619d,
                 51d, 31d, 24d, 0d, 11d,
                 0d, 14d, 0d, 11d, 0d, 0d,
                 0d, 0d, 0d, 0d, 0d));
-        productList.add(new Produit("Carottes Râpées Au Citron De Sicile", "Bonduelle", "", 77L,
+        productList.add(new Produit("Carottes Râpées Au Citron De Sicile", "Bonduelle", "", 77d,
                 5d, 0d, 6d, 0d, 3d,
                 0d, 4d, 0d, 1d, 273d, 0d,
                 0d, 330d, 8d, 2d, 1d));

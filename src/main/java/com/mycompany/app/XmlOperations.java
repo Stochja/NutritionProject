@@ -1,6 +1,6 @@
-package main.java.com.mycompany.app;
+package com.mycompany.app;
 
-import main.java.com.mycompany.app.Nutrition.Produit;
+import com.mycompany.app.Nutrition.Produit;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class XmlOperations {
-    public final static String _PATH_TO_FILE_ = "C:/Users/Nico/IdeaProjects/NutritionProject/";
+    private final static String _PATH_TO_FILE_ = "C:/Users/Nico/IdeaProjects/NutritionProject/";
     private final static String saveFile = "productList.xml";
 
     public static Boolean checkForSavedFile(String filename, String path) {
@@ -91,7 +91,7 @@ public class XmlOperations {
                     Produit prd = new Produit(element.getElementsByTagName("ProductName").item(0).getTextContent(),
                             element.getElementsByTagName("BrandName").item(0).getTextContent(),
                             element.getAttribute("barcode"),
-                            Long.parseLong(element.getElementsByTagName("Calories").item(0).getTextContent()),
+                            Double.parseDouble(element.getElementsByTagName("Calories").item(0).getTextContent()),
                             Double.parseDouble(element.getElementsByTagName("TotalFat").item(0).getTextContent()),
                             Double.parseDouble(element.getElementsByTagName("SaturatedFat").item(0).getTextContent()),
                             Double.parseDouble(element.getElementsByTagName("TotalCarbs").item(0).getTextContent()),

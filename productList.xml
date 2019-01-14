@@ -42,4 +42,25 @@
         <Calcium>2.0</Calcium>
         <Iron>1.0</Iron>
     </Product>
+    <Product barcode="3017760851466">
+        <ProductName>Sabl‚ des Flandres</ProductName>
+        <BrandName>LU</BrandName>
+        <Calories>464.0</Calories>
+        <TotalFat>14.4</TotalFat>
+        <SaturatedFat>9.6</SaturatedFat>
+        <TotalCarbs>75.2</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>3.2</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>25.6</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>6.4</Protein>
+        <Sodium>0.32</Sodium>
+        <Potassium>0.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>0.0</VitaminA>
+        <VitaminC>0.0</VitaminC>
+        <Calcium>0.0</Calcium>
+        <Iron>0.0</Iron>
+    </Product>
 </Products>

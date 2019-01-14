@@ -1,4 +1,4 @@
-package main.java.com.mycompany.app.Nutrition;
+package com.mycompany.app.Nutrition;
 
 import java.util.Objects;
 
@@ -14,7 +14,7 @@ public class Produit {
     private String brandName;
 
     //
-    private long calories;
+    private Double calories;
 
     // In grams
     private Double totalFat;
@@ -40,7 +40,7 @@ public class Produit {
     private Double iron;
 
     // Constructor with all parameters
-    public Produit(String productName, String brandName, String barcode, Long calories, Double totalFat,
+    public Produit(String productName, String brandName, String barcode, Double calories, Double totalFat,
                    Double saturatedFat, Double totalCarbs, Double polyunsaturated,
                    Double dietaryFiber, Double monounsaturated, Double sugars, Double trans, Double protein,
                    Double sodium, Double potassium, Double cholesterol, Double vitaminA, Double vitaminC,
@@ -68,7 +68,7 @@ public class Produit {
     }
 
     // Constructor with all parameters except barcode and brandName
-    public Produit(String productName, long calories, double totalFat, double saturatedFat,
+    public Produit(String productName, double calories, double totalFat, double saturatedFat,
                    double totalCarbs, double polyunsaturated,
                    double dietaryFiber, double monounsaturated, double sugars, double trans, double protein,
                    double sodium, double potassium, double cholesterol, double vitaminA, double vitaminC,
@@ -137,7 +137,7 @@ public class Produit {
         return brandName;
     }
 
-    public Long getCalories() {
+    public Double getCalories() {
         return calories;
     }
 
