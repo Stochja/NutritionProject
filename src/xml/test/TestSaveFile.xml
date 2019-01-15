@@ -20,6 +20,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>0</Limits>
     </Product>
     <Product barcode="">
         <ProductName>Carottes Râpées Au Citron De Sicile</ProductName>
@@ -41,5 +43,7 @@
         <VitaminC>8.0</VitaminC>
         <Calcium>2.0</Calcium>
         <Iron>1.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>0</Limits>
     </Product>
 </Products>

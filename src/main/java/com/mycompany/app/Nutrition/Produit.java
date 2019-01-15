@@ -39,12 +39,21 @@ public class Produit {
     private Double calcium;
     private Double iron;
 
+    public Integer getPortionSize() {
+        return portionSize;
+    }
+
+    // Misc.
+    private Integer portionSize;
+    private Integer limits;
+
+
     // Constructor with all parameters
     public Produit(String productName, String brandName, String barcode, Double calories, Double totalFat,
                    Double saturatedFat, Double totalCarbs, Double polyunsaturated,
                    Double dietaryFiber, Double monounsaturated, Double sugars, Double trans, Double protein,
                    Double sodium, Double potassium, Double cholesterol, Double vitaminA, Double vitaminC,
-                   Double calcium, Double iron) {
+                   Double calcium, Double iron, Integer portionSize, Integer limits) {
         this.productName = productName;
         this.brandName = brandName;
         this.barcode = barcode;
@@ -65,6 +74,8 @@ public class Produit {
         this.vitaminC = vitaminC;
         this.calcium = calcium;
         this.iron = iron;
+        this.portionSize = portionSize;
+        this.limits = limits;
     }
 
     // Constructor with all parameters except barcode and brandName
@@ -72,7 +83,7 @@ public class Produit {
                    double totalCarbs, double polyunsaturated,
                    double dietaryFiber, double monounsaturated, double sugars, double trans, double protein,
                    double sodium, double potassium, double cholesterol, double vitaminA, double vitaminC,
-                   double calcium, double iron) {
+                   double calcium, double iron, int portionSize, int limits) {
         this.productName = productName;
         this.calories = calories;
         this.totalFat = totalFat;
@@ -91,6 +102,8 @@ public class Produit {
         this.vitaminC = vitaminC;
         this.calcium = calcium;
         this.iron = iron;
+        this.portionSize = portionSize;
+        this.limits = limits;
     }
 
     @Override
@@ -203,5 +216,9 @@ public class Produit {
 
     public Double getIron() {
         return iron;
+    }
+
+    public Integer getLimits() {
+        return limits;
     }
 }

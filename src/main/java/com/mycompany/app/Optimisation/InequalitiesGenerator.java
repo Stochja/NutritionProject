@@ -24,31 +24,34 @@ public class InequalitiesGenerator {
         String fatInequality = "";
         String saturatedFatInequality = "";
         String sodiumInequality = "";
-
+        List<String> limitsInequalities = new ArrayList<>();
         String prdNames = "";
 
         int i = 0;
         for (Produit prd : NutritionProject.productList) {
             if (i == 0) {
-                caloriesInequality = caloriesInequality.concat(getPerGram(prd.getCalories()) + variables[i]);
-                proteinInequality = proteinInequality.concat(getPerGram(prd.getProtein()) + variables[i]);
-                carbsInequality = carbsInequality.concat(getPerGram(prd.getTotalCarbs()) + variables[i]);
-                fiberInequality = fiberInequality.concat(getPerGram(prd.getDietaryFiber()) + variables[i]);
-                sugarsInequality = sugarsInequality.concat(getPerGram(prd.getSugars()) + variables[i]);
-                fatInequality = fatInequality.concat(getPerGram(prd.getTotalFat()) + variables[i]);
-                saturatedFatInequality = saturatedFatInequality.concat(getPerGram(prd.getTotalFat()) + variables[i]);
-                sodiumInequality = sodiumInequality.concat(getPerGram(prd.getSodium()) + variables[i]);
+                caloriesInequality = caloriesInequality.concat(getPerGram(prd.getCalories() * prd.getPortionSize()) + variables[i]);
+                proteinInequality = proteinInequality.concat(getPerGram(prd.getProtein() * prd.getPortionSize()) + variables[i]);
+                carbsInequality = carbsInequality.concat(getPerGram(prd.getTotalCarbs() * prd.getPortionSize()) + variables[i]);
+                fiberInequality = fiberInequality.concat(getPerGram(prd.getDietaryFiber() * prd.getPortionSize()) + variables[i]);
+                sugarsInequality = sugarsInequality.concat(getPerGram(prd.getSugars() * prd.getPortionSize()) + variables[i]);
+                fatInequality = fatInequality.concat(getPerGram(prd.getTotalFat() * prd.getPortionSize()) + variables[i]);
+                saturatedFatInequality = saturatedFatInequality.concat(getPerGram(prd.getTotalFat() * prd.getPortionSize()) + variables[i]);
+                sodiumInequality = sodiumInequality.concat(getPerGram(prd.getSodium() * prd.getPortionSize()) + variables[i]);
             } else {
-                caloriesInequality = caloriesInequality.concat(" + " + getPerGram(prd.getCalories()) + variables[i]);
-                proteinInequality = proteinInequality.concat(" + " + getPerGram(prd.getProtein()) + variables[i]);
-                carbsInequality = carbsInequality.concat(" + " + getPerGram(prd.getTotalCarbs()) + variables[i]);
-                fiberInequality = fiberInequality.concat(" + " + getPerGram(prd.getDietaryFiber()) + variables[i]);
-                sugarsInequality = sugarsInequality.concat(" + " + getPerGram(prd.getSugars()) + variables[i]);
-                fatInequality = fatInequality.concat(" + " + getPerGram(prd.getTotalFat()) + variables[i]);
-                saturatedFatInequality = saturatedFatInequality.concat(" + " + getPerGram(prd.getSaturatedFat()) + variables[i]);
-                sodiumInequality = sodiumInequality.concat(" + " + getPerGram(prd.getSodium()) + variables[i]);
+                caloriesInequality = caloriesInequality.concat(" + " + getPerGram(prd.getCalories() * prd.getPortionSize()) + variables[i]);
+                proteinInequality = proteinInequality.concat(" + " + getPerGram(prd.getProtein() * prd.getPortionSize()) + variables[i]);
+                carbsInequality = carbsInequality.concat(" + " + getPerGram(prd.getTotalCarbs() * prd.getPortionSize()) + variables[i]);
+                fiberInequality = fiberInequality.concat(" + " + getPerGram(prd.getDietaryFiber() * prd.getPortionSize()) + variables[i]);
+                sugarsInequality = sugarsInequality.concat(" + " + getPerGram(prd.getSugars() * prd.getPortionSize()) + variables[i]);
+                fatInequality = fatInequality.concat(" + " + getPerGram(prd.getTotalFat() * prd.getPortionSize()) + variables[i]);
+                saturatedFatInequality = saturatedFatInequality.concat(" + " + getPerGram(prd.getSaturatedFat() * prd.getPortionSize()) + variables[i]);
+                sodiumInequality = sodiumInequality.concat(" + " + getPerGram(prd.getSodium() * prd.getPortionSize()) + variables[i]);
             }
             prdNames = prdNames.concat(prd.getProductName() + "=" + variables[i] + "| ");
+            if (prd.getLimits() > 0) {
+                limitsInequalities.add(variables[i] + " <= " + prd.getLimits());
+            }
             i++;
         }
         String maximize = "Maximize p = ".concat(caloriesInequality).concat(" subject to");
@@ -72,11 +75,20 @@ public class InequalitiesGenerator {
         nutrientLines.add(prdNames);
 
         System.out.println(maximize);
-        for (int j = 0; j < nutrientLines.size(); j++) {
+
+        for (int j = 0; j < nutrientLines.size() - 1; j++) {
             //System.out.println(nutrients[j]);
             System.out.println(nutrientLines.get(j));
         }
+
+        for (int j = 0; j < limitsInequalities.size(); j++) {
+            System.out.println(limitsInequalities.get(j));
+        }
+
+        /* Add daily recommended amounts inequalities */
+        System.out.println(nutrientLines.get(nutrientLines.size() - 1));
     }
+
 
     private static String getPerGram(double val) {
         return Double.toString(val / 100.0);

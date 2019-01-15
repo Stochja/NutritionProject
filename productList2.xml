@@ -83,6 +83,8 @@
         <VitaminC>148.0</VitaminC>
         <Calcium>4.0</Calcium>
         <Iron>3.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
     <Product barcode="None">
         <ProductName>Zucchini</ProductName>
@@ -104,6 +106,8 @@
         <VitaminC>29.0</VitaminC>
         <Calcium>1.0</Calcium>
         <Iron>2.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
     <Product barcode="None">
         <ProductName>Lettuce, green leaf</ProductName>
@@ -125,6 +129,8 @@
         <VitaminC>15.0</VitaminC>
         <Calcium>3.0</Calcium>
         <Iron>4.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
     <Product barcode="No barcode">
         <ProductName>Asparagus</ProductName>
@@ -146,6 +152,8 @@
         <VitaminC>9.0</VitaminC>
         <Calcium>2.0</Calcium>
         <Iron>11.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
     <Product barcode="No barcode">
         <ProductName>Kale</ProductName>
@@ -167,6 +175,8 @@
         <VitaminC>200.0</VitaminC>
         <Calcium>15.0</Calcium>
         <Iron>8.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
     <Product barcode="No barcode">
         <ProductName>Green bean, boiled</ProductName>
@@ -188,5 +198,7 @@
         <VitaminC>27.0</VitaminC>
         <Calcium>3.0</Calcium>
         <Iron>5.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
 </Products>

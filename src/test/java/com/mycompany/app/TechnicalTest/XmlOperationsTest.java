@@ -2,6 +2,7 @@ package com.mycompany.app.TechnicalTest;
 
 import com.mycompany.app.Nutrition.Produit;
 import com.mycompany.app.XmlOperations;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -17,11 +18,11 @@ public class XmlOperationsTest {
         productList.add(new Produit("Chocolat", "Ethiquable", "", 619d,
                 51d, 31d, 24d, 0d, 11d,
                 0d, 14d, 0d, 11d, 0d, 0d,
-                0d, 0d, 0d, 0d, 0d));
+                0d, 0d, 0d, 0d, 0d, 1, 0));
         productList.add(new Produit("Carottes Râpées Au Citron De Sicile", "Bonduelle", "", 77d,
                 5d, 0d, 6d, 0d, 3d,
                 0d, 4d, 0d, 1d, 273d, 0d,
-                0d, 330d, 8d, 2d, 1d));
+                0d, 330d, 8d, 2d, 1d,1, 0));
         XmlOperations.deleteSaveFile(fileName, _PATH_TO_TEST_FILE_);
     }
 

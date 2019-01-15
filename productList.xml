@@ -20,6 +20,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>10</PortionSize>
+        <Limits>50</Limits>
     </Product>
     <Product barcode="">
         <ProductName>Carottes Râpées Au Citron De Sicile</ProductName>
@@ -41,6 +43,8 @@
         <VitaminC>8.0</VitaminC>
         <Calcium>2.0</Calcium>
         <Iron>1.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>500</Limits>
     </Product>
     <Product barcode="None">
         <ProductName>Banana</ProductName>
@@ -62,6 +66,8 @@
         <VitaminC>14.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>1.0</Iron>
+        <PortionSize>100</PortionSize>
+        <Limits>0</Limits>
     </Product>
     <Product barcode="tbd">
         <ProductName>Jambon Le Bon Paris … L'�touff‚e Sans Nitrite</ProductName>
@@ -83,6 +89,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>35</PortionSize>
+        <Limits>0</Limits>
     </Product>
     <Product barcode="tbd">
         <ProductName>Yaourt au lait entier Saveur Coco</ProductName>
@@ -104,6 +112,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>125</PortionSize>
+        <Limits>0</Limits>
     </Product>
     <Product barcode="No barcode">
         <ProductName>Chicken breast</ProductName>
@@ -125,6 +135,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>1.0</Calcium>
         <Iron>5.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>400</Limits>
     </Product>
     <Product barcode="TBD">
         <ProductName>Wonderful almonds roasted salted</ProductName>
@@ -146,6 +158,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>40</Limits>
     </Product>
     <Product barcode="TBD">
         <ProductName>Yaourt nature Pause Gourmande c‚r‚ales noix de p‚can</ProductName>
@@ -167,6 +181,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>225</PortionSize>
+        <Limits>0</Limits>
     </Product>
     <Product barcode="tbd">
         <ProductName>Cereal bio pan de centeno</ProductName>
@@ -188,6 +204,8 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>100</Limits>
     </Product>
     <Product barcode="TBD">
         <ProductName>Carottes rƒp‚es bio </ProductName>
@@ -209,5 +227,145 @@
         <VitaminC>0.0</VitaminC>
         <Calcium>0.0</Calcium>
         <Iron>0.0</Iron>
+        <PortionSize>1</PortionSize>
+        <Limits>500</Limits>
+    </Product>
+	<Product barcode="None">
+        <ProductName>Broccoli</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>34.0</Calories>
+        <TotalFat>0.4</TotalFat>
+        <SaturatedFat>0.0</SaturatedFat>
+        <TotalCarbs>7.0</TotalCarbs>
+        <PolyUnsaturated>0.0</PolyUnsaturated>
+        <DietaryFiber>2.6</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>1.7</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>2.8</Protein>
+        <Sodium>33.0</Sodium>
+        <Potassium>316.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>12.0</VitaminA>
+        <VitaminC>148.0</VitaminC>
+        <Calcium>4.0</Calcium>
+        <Iron>3.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
+    </Product>
+    <Product barcode="None">
+        <ProductName>Zucchini</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>17.0</Calories>
+        <TotalFat>0.3</TotalFat>
+        <SaturatedFat>0.1</SaturatedFat>
+        <TotalCarbs>3.1</TotalCarbs>
+        <PolyUnsaturated>0.1</PolyUnsaturated>
+        <DietaryFiber>1.0</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>2.5</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>1.2</Protein>
+        <Sodium>8.0</Sodium>
+        <Potassium>261.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>4.0</VitaminA>
+        <VitaminC>29.0</VitaminC>
+        <Calcium>1.0</Calcium>
+        <Iron>2.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
+    </Product>
+    <Product barcode="None">
+        <ProductName>Lettuce, green leaf</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>15.0</Calories>
+        <TotalFat>0.2</TotalFat>
+        <SaturatedFat>0.0</SaturatedFat>
+        <TotalCarbs>2.9</TotalCarbs>
+        <PolyUnsaturated>0.1</PolyUnsaturated>
+        <DietaryFiber>1.3</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>0.8</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>1.4</Protein>
+        <Sodium>28.0</Sodium>
+        <Potassium>194.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>148.0</VitaminA>
+        <VitaminC>15.0</VitaminC>
+        <Calcium>3.0</Calcium>
+        <Iron>4.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
+    </Product>
+    <Product barcode="No barcode">
+        <ProductName>Asparagus</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>20.0</Calories>
+        <TotalFat>0.1</TotalFat>
+        <SaturatedFat>0.0</SaturatedFat>
+        <TotalCarbs>3.9</TotalCarbs>
+        <PolyUnsaturated>0.1</PolyUnsaturated>
+        <DietaryFiber>2.1</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>1.9</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>2.2</Protein>
+        <Sodium>2.0</Sodium>
+        <Potassium>202.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>15.0</VitaminA>
+        <VitaminC>9.0</VitaminC>
+        <Calcium>2.0</Calcium>
+        <Iron>11.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
+    </Product>
+    <Product barcode="No barcode">
+        <ProductName>Kale</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>49.0</Calories>
+        <TotalFat>0.9</TotalFat>
+        <SaturatedFat>0.1</SaturatedFat>
+        <TotalCarbs>9.0</TotalCarbs>
+        <PolyUnsaturated>0.3</PolyUnsaturated>
+        <DietaryFiber>2.0</DietaryFiber>
+        <MonoUnsaturated>0.1</MonoUnsaturated>
+        <Sugars>1.3</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>4.3</Protein>
+        <Sodium>38.0</Sodium>
+        <Potassium>491.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>199.0</VitaminA>
+        <VitaminC>200.0</VitaminC>
+        <Calcium>15.0</Calcium>
+        <Iron>8.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
+    </Product>
+    <Product barcode="No barcode">
+        <ProductName>Green bean, boiled</ProductName>
+        <BrandName>None</BrandName>
+        <Calories>31.0</Calories>
+        <TotalFat>0.1</TotalFat>
+        <SaturatedFat>0.0</SaturatedFat>
+        <TotalCarbs>7.0</TotalCarbs>
+        <PolyUnsaturated>0.1</PolyUnsaturated>
+        <DietaryFiber>3.4</DietaryFiber>
+        <MonoUnsaturated>0.0</MonoUnsaturated>
+        <Sugars>1.6</Sugars>
+        <TransFat>0.0</TransFat>
+        <Protein>1.8</Protein>
+        <Sodium>6.0</Sodium>
+        <Potassium>209.0</Potassium>
+        <Cholesterol>0.0</Cholesterol>
+        <VitaminA>2.0</VitaminA>
+        <VitaminC>27.0</VitaminC>
+        <Calcium>3.0</Calcium>
+        <Iron>5.0</Iron>
+		<PortionSize>1</PortionSize>
+		<Limits>0</Limits>
     </Product>
 </Products>

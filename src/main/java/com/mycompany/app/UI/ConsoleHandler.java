@@ -77,10 +77,14 @@ public class ConsoleHandler {
         double calcium = Double.parseDouble(sca.nextLine()) * factor;
         System.out.println("Iron :");
         double iron = Double.parseDouble(sca.nextLine()) * factor;
+        System.out.println("Portion size ? (1g default) :");
+        int portionSize = Integer.parseInt(sca.nextLine());
+        System.out.println("Limit per day :");
+        int limits = Integer.parseInt(sca.nextLine());
 
         NutritionProject.productList.add(new Produit(productName, brandName, barcode, calories, totalFat, saturatedFat,
                 totalCarbs, polyunsaturated, dietaryFiber, monounsaturated, sugars, trans, protein, sodium, potassium,
-                cholesterol, vitaminA, vitaminC, calcium, iron));
+                cholesterol, vitaminA, vitaminC, calcium, iron, portionSize, limits));
         System.out.println("Product added to list");
     }
 

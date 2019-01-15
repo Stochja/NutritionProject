@@ -107,7 +107,10 @@ public class XmlOperations {
                             Double.parseDouble(element.getElementsByTagName("VitaminA").item(0).getTextContent()),
                             Double.parseDouble(element.getElementsByTagName("VitaminC").item(0).getTextContent()),
                             Double.parseDouble(element.getElementsByTagName("Calcium").item(0).getTextContent()),
-                            Double.parseDouble(element.getElementsByTagName("Iron").item(0).getTextContent()));
+                            Double.parseDouble(element.getElementsByTagName("Iron").item(0).getTextContent()),
+                            Integer.parseInt(element.getElementsByTagName("PortionSize").item(0).getTextContent()),
+                            Integer.parseInt((element.getElementsByTagName("Limits").item(0).getTextContent())
+                            ));
                     prdList.add(prd);
                 }
             }
@@ -139,6 +142,9 @@ public class XmlOperations {
         product.appendChild(getProductElements(doc, "VitaminC", prd.getVitaminC().toString()));
         product.appendChild(getProductElements(doc, "Calcium", prd.getCalcium().toString()));
         product.appendChild(getProductElements(doc, "Iron", prd.getIron().toString()));
+        product.appendChild(getProductElements(doc, "PortionSize", prd.getPortionSize().toString()));
+        product.appendChild(getProductElements(doc, "Limits", prd.getLimits().toString()));
+
 
         return product;
     }
